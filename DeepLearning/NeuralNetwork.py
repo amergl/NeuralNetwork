@@ -1,2 +1,7 @@
+from numpy import dot
 class NeuralNetwork:
-    pass
+    
+    def calculateNeuronInput(self, inputData, weights, bias):
+        return dot(weights,inputData)+bias
+    
+    
