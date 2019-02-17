@@ -45,7 +45,6 @@ class TestSingleLayerPerceptron:
         inputData=0.5*ones(dimension)
         weights=0.5*ones(dimension)
         expected=array([0.679178699])
-        print(inputData,weights)
         self.assertNetworkOutput(expected, inputData, weights,bias)
         
     def testSingleInputMultipleOuputNeurons(self):
@@ -63,3 +62,4 @@ class TestSingleLayerPerceptron:
         weights=array([[0.5]*dimension]*dimension)
         expected=array([0.9525741268]*dimension)
         self.assertNetworkOutput(expected, inputData, weights, bias)
+        
